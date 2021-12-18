@@ -1,0 +1,28 @@
+body{
+   font-family: 'Averia Serif Libre', cursive;
+}
+
+.Heading{
+   text-align: center;
+   padding: 5%;
+}
+.Content{
+   text-align: center;
+   padding-bottom:2%;
+}
+.Generate{
+   text-align: center;
+   padding: 0%;
+}
+
+h1{
+   font-size: 350%;
+}
+
+h2{
+   font-size: 220%;
+}
+
+a{
+   text-decoration: none;
+}

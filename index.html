@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+   <meta charset="utf-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+   <title> Modal Interchange </title>
+   <link rel="stylesheet" href="style.css">
+</head><body>
+
+<div class="Heading">
+   <h1> Modal Interchange </h1>
+</div>
+
+<div class="Content">
+   <h2 id="text"> Imaj7 → ii-7 → IV+7 → V7 </h2>
+</div>
+
+<div class="Generate">
+   <a href="index.html" id="button" onclick="randomize()">randomize</a>
+</div>
+
+<script>
+   function random_item(items){
+   return items[Math.floor(Math.random()*items.length)];
+   }
+
+   var items = [" Imaj7", " ii-7", " iii-7", " IVmaj7", " V7", " vi-7", " vii-7(b5)",
+   " i-7", " ii-7", " bIIImaj7", " IV7", " v-7", " vi-7(b5)", " bVIImaj7",
+   " i-7", " bIImaj7", " bIII7", " iv-7", " v-7(b5)", " bVImaj7", " bvii-7",
+   " Imaj7", " II7", " iii-7", " #iv-7(b5)", " Vmaj7", " vi-7", " vii-7",
+   " I7", " ii-7", " iii-7(b5)", " IVmaj7", " v-7", " vi-7", " bVIImaj7",
+   " i-7", " ii-7(b5)", " bIIImaj7", " iv-7", " v-7", " bVImaj7", " bVII7",
+   " i-7(b5)", " bIImaj7", " biii-7", " iv-7", " bVmaj7", " bVI7", " bvii-7"];
+   console.log(random_item(items));
+    document.getElementById('text').innerHTML = (random_item(items)).toString() + " → " + (random_item(items)).toString() + " → " + (random_item(items)).toString() + " → " + (random_item(items)).toString();
+</script>
+
+</body></html>
