@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+   <meta charset="utf-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+   <title> BMTS </title>
+   <link rel="stylesheet" href="style.css">
+</head><body>
+
+<div class="Heading">
+   <h1> Bpm, Mode, Time Signiture </h1>
+</div>
+
+<div class="Content">
+   <h2 id="text"> blank </h2>
+</div>
+
+<div class="Generate">
+   <a href="BMTS.html" id="button" onclick="randomize()">randomize</a>
+</div>
+
+<footer style="text-align:center;">
+   <a href="index.html">Modal Interchange, </a>
+   <a href="ObliqueStrategies.html">Oblique Strategies</a>
+</footer>
+
+<style>
+   footer {margin:200px; font-weight:700; font-style: oblique;}
+</style>
+
+<script>
+   function random_mode(mode){
+   return mode[Math.floor(Math.random()*mode.length)];
+   }
+   function random_denom(denom){
+   return denom[Math.floor(Math.random()*denom.length)];
+   }
+   var mode = ["Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"];
+   var denom = ["4", "8", "16"];	
+
+    document.getElementById('text').innerHTML = "Bpm: " + (Math.floor(Math.random() * 100) + 60).toString() + "<br>" + "Mode: " + (random_mode(mode)).toString() + "<br>" + "Time Signature: " + (Math.floor(Math.random() * 13) + 2).toString() + "/ " + (random_denom(denom)).toString();
+</script>
+
+</body></html>
