@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cards = ["ass", "look where you cant see", "find what you can find and destroy it", "wow"];
+        let num = window.prompt("how many cards do you want?");
+        let full = '';
+
+        function rand(num){
+            num = Math.random() * cards.length - 1;
+            return num;
+        }
+
+        randNum = rand();
+
+        full = cards[randNum];
+
+        alert(full);
+
+        
+// return items[Math.floor(Math.random()*items.length)];
+
+
+        
+    </script>
+</body>
+</html>

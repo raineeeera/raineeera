@@ -17,16 +17,17 @@
 </div>
 
 <div class="Generate">
-   <a href="ObliqueStrategies.html" id="button" onclick="randomize()">randomize</a>
+	<a href="ObliqueStrategies.html" id="button" onclick="randomize()">randomize</a> 
 </div>
 
 <footer style="text-align:center;">
+	<a href="MCObliqueStrategies.html" id="button">Multiple Cards?</a> <br><br>
    <a href="index.html">Modal Interchange, </a>
    <a href="BMTS.html">BMTS</a>
 </footer>
 
 <style>
-   footer {margin:200px; font-weight:700; font-style: oblique;}
+   footer {margin:100px; font-weight:700; font-style: oblique;}
 </style>
 
 <script>
@@ -199,7 +200,7 @@
   	"You are an engineer. ",
   	"You can only make one dot at a time. ",
   	"You don't have to be ashamed of using your own ideas."];
-   console.log(random_item(items));
+    console.log(random_item(items));
     document.getElementById('text').innerHTML = (random_item(items)).toString();
 </script>
 
