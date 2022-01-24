@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+   <meta charset="utf-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+   <title> Raine's Oblique Strategies </title>
+   <link rel="stylesheet" href="style.css">
+</head><body>
+
+<div class="Heading">
+   <h1> Raine's Oblique Strategies </h1>
+</div>
+
+<div class="Content">
+   <h2 id="text"> blank </h2>
+</div>
+
+<div class="Generate">
+	<a href="RaineObliqueStrategies.html" id="button" onclick="randomize()">randomize</a> 
+</div>
+
+<footer style="text-align:center;">
+   <a href="index.html">Modal Interchange, </a>
+   <a href="BMTS.html">BMTS, </a>
+   <a href="ObliqueStrategies.html">Oblique Strategies</a> 
+</footer>
+
+<style>
+   footer {margin:100px; font-weight:700; font-style: oblique;}
+</style>
+
+<script>
+   function random_item(items){
+   return items[Math.floor(Math.random()*items.length)];
+   }
+
+   var items = ["Put It Down; Return", 
+"Ghost Pepper", 
+"Think of Every Ending",
+"It's Yet Evolved",
+"Pages like Paper", 
+"End Screen; Credits",
+"What Has its Day Looked Like?",
+"Advance the Gameboy",
+"Granular like a Rock (In your Backyard)",
+"Think of How It Tastes",
+"Map It Out (Every Axis)",
+"Data Allocate (Array) [Push, Pop]",
+"Higher Order (Abstraction)",
+"Free Sample!",
+"Keeper vs Sleeper",
+"What Does the Plot Entail?",
+"Does It Talk?",
+"Literal",
+"Every Way You Can Transition (Parameter)",
+"Compare, Reference, Share; What Would They Do?",
+"Like, Dislike?",
+"What Could be Better?",
+"For a Moment",
+"Grid Lines", 
+"Icon",
+"Notes, Intervals, Stepping, Staircase, and Ladders",
+"Randomize and Reuse (Recycle Please)",
+"What's Something you've Never Done?",
+"Download",
+"List Some of your Favorite Artists and Copy One of Their Usual Elements; 'Starbucks - I'll Have the Usual'",
+"What's Something you Hate/Dislike?",
+"What's One of your Current Favorite Songs?",
+"Bundle It Up In Winter",
+"Don't Catch a Cold!",
+"Feel? Vibe? feel? vibe?",
+"Forest Fade",
+"Invent Something Completely and Utterly New from Usual Chemicals & Compounds",
+"Learn Something New",
+"Wikipedia (Relevant or Completely Random)",
+"Waveform",
+"(Z)xylophone, Zebra, Zimbabwe...",
+"The Stars Above",
+"I'm Stupid",
+"I know",
+"Yesterday, Tomorrow, Today",
+"Busy",
+"Do Not, Under Any Circumstances, Do It",
+"Switch Over",
+"Dim Lighting",
+"It's too Bright",
+"Poetry",
+"The Classics",
+"Out of your Comfort",
+"Momento Mori",
+"Controller",
+"FXxxxxxxxxxxx{(xxxxxxx[xxxxxxxxx, [_xxxxx_]])}",
+"Loop! the Unexpected! the Moment!",
+"Go Through your Bookmarks!",
+"A New Hobby/Interest",
+"Pit, Core(/?,)",
+"µL%±ÄóFAÄ█N6A·ü+",
+"Wrinkles",
+"New Program",
+"New Dynamics",
+"The Background",
+"Splatters",
+"Look at It Through the Lens of a Concerned Parent",
+"Moments?",
+"Concave, Convex?",
+"Make an Art Piece for your Art Piece",
+"Think of What the Headlines Will Say!",
+"Ponder Math",
+"Grochery List",
+"Beatles: the Band, the Bug",
+"Shock Them All",
+"Pinecones",
+"The Keys Represent Something Else"
+];
+    console.log(random_item(items));
+    document.getElementById('text').innerHTML = (random_item(items)).toString();
+</script>
+
+</body></html>
